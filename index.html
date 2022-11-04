@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        img{
+            height:60px !important;
+            width:60px !important;
+        }
+    </style>
+    <title>Crypto Tracker</title>
+</head>
+
+<body class="bg-black">
+    <div class="container p-3">
+        <div class="row text-center text-light">
+            <h1 class="display-1" style="font-family: 'Bebas Neue', cursive; ">Crypto Tracker</h1>
+            <h4>By Rohit Nandagawali</h4>
+        </div>
+            <div class="row d-flex flex-column ">
+                <div class="col-md-12 m-3">
+                    <form action="" id="searchForm">
+                        <div class="row d-flex flex-row justify-content-center ">
+                            <div class="col-md-6 form-group text-start d-flex flex-row ">
+                                <div class="col-md-8">
+                                    <select name="coinType" class="form-select" id="coinType">
+                                        <option value="bitcoin">Bitcoin - INR</option>
+                                        <option value="dogecoin">Dogecoin - INR</option>
+                                        <option value="ethereum">Ethereum - INR</option>
+                                        <option value="polkadot">Polkadot - INR</option>
+                                        <option value="tether">Tether - INR</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 d-flex flex-row justify-content-center  ">
+                                    <button type="submit" class="btn btn-primary ms-2 ">Get Prize</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row d-flex flex-row justify-content-center" id="resultSection">
+
+            </div>
+    </div>
+
+    <!-- axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- custome script -->
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
